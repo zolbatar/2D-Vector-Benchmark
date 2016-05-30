@@ -1,4 +1,10 @@
 [package]
-name = "Rust"
+name = "2d_vector_performance_benchmark"
 version = "0.1.0"
 authors = ["Daryl Dudey <daryljdudey@googlemail.com>"]
+
+[dependencies]
+#servo-skia = "0.20130412.9"
+#cairo-rs = "0.0.8"
+gtk = "*"
+#gtk = { version = "0.0.7", features = ["v3_8"] }
