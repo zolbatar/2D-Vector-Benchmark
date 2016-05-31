@@ -24,7 +24,6 @@ public class FXMLMainController implements Initializable {
         for (int x = 0; x < 1000; x++) {
             Color a = Color.rgb(r.nextInt(256), r.nextInt(256), r.nextInt(256));
             gc.setStroke(a);
-//            gc.strokeLine(r.nextInt(Main.WIDTH), r.nextInt(Main.HEIGHT), r.nextInt(Main.WIDTH), r.nextInt(Main.HEIGHT));
             gc.strokeLine(r.nextInt(Main.WIDTH * 2) - (Main.WIDTH / 2), r.nextInt(Main.HEIGHT * 2) - (Main.HEIGHT / 2), r.nextInt(Main.WIDTH * 2) - (Main.WIDTH / 2), r.nextInt(Main.HEIGHT * 2) - (Main.HEIGHT / 2));
         }
     }
