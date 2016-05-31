@@ -6,8 +6,8 @@ echo "JavaFX"
 printf "         JavaFX: " > ../../../Timings/JavaFX.txt
 { gtime -f "%E real  %U user  %S sys %M set size" java -server -Xms1024m -XX:+UseG1GC -jar 2DVectorBenchmarkJavaFX.jar ; } 2>> ../../../Timings/JavaFX.txt
 cd ../..
-cd 2DVectorBenchmarkJavaFX/dist
-echo "JavaFX"
+cd 2DVectorBenchmarkLWJGL/dist
+echo "Java LWJGL"
 printf "     Java LWJGL: " > ../../../Timings/JavaLWJGL.txt
 { gtime -f "%E real  %U user  %S sys %M set size" java -server -Xms1024m -XX:+UseG1GC -Dorg.lwjgl.librarypath="../libs/native" -XstartOnFirstThread -jar 2DVectorBenchmarkLWJGL.jar ; } 2>> ../../../Timings/JavaLWJGL.txt
 cd ../../..
