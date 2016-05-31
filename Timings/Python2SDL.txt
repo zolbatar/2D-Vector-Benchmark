@@ -1,1 +1,1 @@
-    Python2 SDL: 0:11.41 real  11.01 user  0.30 sys 207814656 set size
+    Python2 SDL: 0:11.69 real  10.71 user  0.28 sys 205668352 set size

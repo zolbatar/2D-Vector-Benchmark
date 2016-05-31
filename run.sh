@@ -1,5 +1,10 @@
 #!/bin/sh
 
+# Blitz Max
+echo "BlitzMax"
+printf "       BlitzMax: " > Timings/BlitzMax.txt
+{ gtime -f "%E real  %U user  %S sys %M set size" BlitzMax/2DVectorBenchmark.app/Contents/MacOS/2DVectorBenchmark ; } 2>> Timings/BlitzMax.txt
+
 # Java
 cd Java/2DVectorBenchmarkJavaFX/dist
 echo "JavaFX"
@@ -26,6 +31,7 @@ printf "    Python3 SDL: " > ../Timings/Python3SDL.txt
 cd ..
 
 # Timings
+cat Timings/BlitzMax.txt
 cat Timings/JavaFX.txt
 cat Timings/JavaLWJGL.txt
 cat Timings/Python2.txt

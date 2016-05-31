@@ -1,1 +1,1 @@
-         JavaFX: 0:05.71 real  2.43 user  0.63 sys 557858816 set size
+         JavaFX: 0:05.67 real  2.35 user  0.57 sys 573341696 set size

@@ -1,1 +1,1 @@
- Python3 OpenGL: 0:04.91 real  4.51 user  0.26 sys 208207872 set size
+ Python3 OpenGL: 0:04.89 real  4.38 user  0.25 sys 208486400 set size

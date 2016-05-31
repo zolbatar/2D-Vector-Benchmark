@@ -17,8 +17,6 @@ public class Main {
     private int frame = 0;
  
     public void run() {
-        System.out.println("Hello LWJGL " + Version.getVersion() + "!");
- 
         try {
             init();
             loop();
