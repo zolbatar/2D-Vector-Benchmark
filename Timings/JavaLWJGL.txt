@@ -1,1 +1,1 @@
-     Java LWJGL: 0:05.08 real  0.94 user  0.32 sys 342343680 set size
+     Java LWJGL: 0:05.07 real  0.94 user  0.32 sys 344408064 set size

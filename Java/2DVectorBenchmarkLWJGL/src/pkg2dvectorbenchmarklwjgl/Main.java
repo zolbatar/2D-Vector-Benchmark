@@ -1,7 +1,6 @@
 package pkg2dvectorbenchmarklwjgl;
 
 import java.util.Random;
-import org.lwjgl.*;
 import org.lwjgl.glfw.*;
 import org.lwjgl.opengl.*;
 import static org.lwjgl.glfw.Callbacks.*;

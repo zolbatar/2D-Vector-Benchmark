@@ -11,7 +11,7 @@ import javafx.scene.paint.Color;
 
 public class FXMLMainController implements Initializable {
     @FXML private Canvas canvas;
-    private Random r = new Random();
+    private final Random r = new Random();
     
     @Override
     public void initialize(URL url, ResourceBundle rb) {

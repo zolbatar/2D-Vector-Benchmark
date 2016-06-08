@@ -14,3 +14,5 @@ BlitzMax/*.debug.app
 BlitzMax/*.mt.app
 BlitzMax/*.app
 .DS_Store
+/Java/2DVectorBenchmarkJava2D/nbproject/private/
+/Java/2DVectorBenchmarkJava2D/build/
