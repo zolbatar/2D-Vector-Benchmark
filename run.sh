@@ -6,7 +6,12 @@ printf "       BlitzMax: " > Timings/BlitzMax.txt
 { gtime -f "%E real  %U user  %S sys %M set size" BlitzMax/2DVectorBenchmark.app/Contents/MacOS/2DVectorBenchmark ; } 2>> Timings/BlitzMax.txt
 
 # Java
-cd Java/2DVectorBenchmarkJavaFX/dist
+cd Java/2DVectorBenchmarkJava2D/dist
+echo "Java2D"
+printf "         Java2D: " > ../../../Timings/Java2D.txt
+{ gtime -f "%E real  %U user  %S sys %M set size" java -server -Xms1024m -XX:+UseG1GC -jar 2DVectorBenchmarkJava2D.jar ; } 2>> ../../../Timings/Java2D.txt
+cd ../..
+cd 2DVectorBenchmarkJavaFX/dist
 echo "JavaFX"
 printf "         JavaFX: " > ../../../Timings/JavaFX.txt
 { gtime -f "%E real  %U user  %S sys %M set size" java -server -Xms1024m -XX:+UseG1GC -jar 2DVectorBenchmarkJavaFX.jar ; } 2>> ../../../Timings/JavaFX.txt
@@ -32,6 +37,7 @@ cd ..
 
 # Timings
 cat Timings/BlitzMax.txt
+cat Timings/Java2D.txt
 cat Timings/JavaFX.txt
 cat Timings/JavaLWJGL.txt
 cat Timings/Python2.txt

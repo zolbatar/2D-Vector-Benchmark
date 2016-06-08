@@ -14,7 +14,6 @@ public class Application {
         
         // Create game window...
         JFrame app = new JFrame();
-        //app.setSize(WIDTH, HEIGHT);
         app.setIgnoreRepaint(true);
         app.setTitle("2D Vector Performance (Java2D)");
         app.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -46,18 +45,19 @@ public class Application {
         Graphics2D g2d = null;
         Color background = Color.BLACK;
         Random r = new Random();
-    
+        
         // Variables for counting frames per seconds
-        int fps = 0;
-        int frames = 0;
-        long totalTime = 0;
-        long curTime = System.currentTimeMillis();
-        long lastTime = curTime;
         while (true) {
             try {
-                // clear back buffer...
                 g2d = bi.createGraphics();
-                g2d.setColor( background );
+ 
+              // Anti-aliasing
+//                RenderingHints rh = new RenderingHints(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
+//                g2d.setRenderingHints(rh);
+    
+                // clear back buffer...
+                g2d.setColor(background);
+                g2d.fillRect(0, 0, WIDTH, HEIGHT);
 
                 // Draw some line
                 g2d.setStroke(new BasicStroke(1));
